@@ -1,0 +1,53 @@
+[
+    {
+        "author_photo": "images/ava_01.jpg",
+        "author": "Михаил Петров",
+        "published": "Два часа назад",
+        "photo": "images/photo_01.jpg",
+        "likes": "21",
+        "description": "Принесли десерт. Решил сфоткать. Сейчас приступил к трапезе",
+        "tags": "#вкусная еда #моя тарелка"
+    },
+    {
+        "author_photo": "images/ava_02.jpg",
+        "author": "Андрей Иванов",
+        "published": "Четыре часа назад",
+        "photo": "images/photo_02.jpg",
+        "likes": "34",
+        "description": "Принесли десерт. Решил сфоткать. Сейчас приступил к трапезе",
+        "tags": "#вкусная еда #моя тарелка"
+    },
+    {
+        "author_photo": "images/ava_03.jpg",
+        "author": "Настя Денисова",
+        "published": "Пять дней назад",
+        "photo": "images/photo_03.jpg",
+        "likes": "41",
+        "description": "Принесли десерт. Решил сфоткать. Сейчас приступил к трапезе",
+        "tags": "#вкусная еда #моя тарелка"
+    },
+    {
+        "author_photo": "files/clinton.jpg",
+        "author": "Andrew Rover",
+        "description": "Andrew Anderson is more than catch the eye!",
+        "photo": "files/yencag.ru_2016-12-27_07-11-22.jpg",
+        "tags": "#it's truth",
+        "likes": "45"
+    },
+    {
+        "author_photo": "files/yencag.ru_2016-12-27_07-11-22.jpg",
+        "author": "Matthew Johnson",
+        "description": "It's me again",
+        "photo": "files/clinton.jpg",
+        "tags": "Yheeaa! ",
+        "likes": "38"
+    },
+    {
+        "author_photo": "files/clinton.jpg",
+        "author": "Hilary Clinton",
+        "description": "Hilary for president",
+        "photo": "files/clinton.jpg",
+        "tags": "#for the president",
+        "likes": "45"
+    }
+]
