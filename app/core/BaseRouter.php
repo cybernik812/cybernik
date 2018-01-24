@@ -12,6 +12,7 @@ abstract class BaseRouter
         include_once __DIR__ . '/../controller/' .
             $this->getControllerName() . '.php';
         $controllerName = $this->getControllerName();
+
         $controller = new $controllerName;
         if (!method_exists($controller, $this->getActionName())) {
             return render('404');

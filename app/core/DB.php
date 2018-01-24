@@ -8,9 +8,9 @@ class DB
 
     private function __construct()
     {
-        $dsn = 'mysql:dbname=skillogram_710;host=localhost';
+        $dsn = 'mysql:dbname=localhost1;host=localhost';
         $user = 'root';
-        $password = 'password';
+        $password = 'root';
 
         $this->pdo = new PDO($dsn, $user, $password);
 

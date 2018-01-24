@@ -1,4 +1,4 @@
-<?php
+;<?php
 
 try {
     $title = $_GET['title'];

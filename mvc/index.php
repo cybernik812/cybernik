@@ -2,22 +2,22 @@
 
 require_once 'application/boot.php';
 
-//require_once 'application/boot.php';
+$url = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
 
-/*if (strpos($_SERVER['REQUEST_URI'], '/about') !==false) {
-	require_once 'application/controllers/AboutController.php';
-	$controller = new AboutController();
-	$controller->indexAction();	
+$controller = !empty($url[0]) ? $url[0] : 'home';
+$controller = ucfirst(strtolower($controller));
+$controller = $controller . 'Controller';
 
-} else {
+$action = !empty($url[1]) ? $url[1] : 'index';
+$action = ucfirst(strtolower($action));
+$action = $action . 'Action';
 
-	require_once 'application/controllers/IndexController.php';
-	$controller = new IndexController();
-	$controller->indexAction();	
+$filename = 'controllers/' . basename($controller ). '.php';
+if (!file_exists($filename) || !method_exists($controller, $action)) {
+    $controller = 'HomeController';
+    $controller = 'NotFoundAction';
 }
 
-var_dump($_SERVER['REQUEST_URI']);
-
-*/
-
+$controller_object = new $controller();
+$controller_object->$action();
 
